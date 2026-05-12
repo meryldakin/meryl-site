@@ -1,0 +1,9 @@
+[build]
+  command = "yarn build"
+  publish = "build"
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/dahlia"
+  to = "/dahlia.html"
+  status = 200
