@@ -3,7 +3,14 @@
   publish = "build"
   functions = "netlify/functions"
 
+# Dahlia page must come BEFORE the SPA catch-all
 [[redirects]]
   from = "/dahlia"
   to = "/dahlia.html"
+  status = 200
+
+# SPA catch-all for React app
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
   status = 200
